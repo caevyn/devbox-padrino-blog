@@ -33,7 +33,7 @@ echo 'done with environment setup!'
 
 echo 'get and run app'
 
-cd /opt 
+cd /home/vagrant/dev 
 git clone https://github.com/caevyn/sample_blog.git
 cd sample_blog
 bundle
