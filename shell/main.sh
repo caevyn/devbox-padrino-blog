@@ -1,4 +1,6 @@
 echo "proxy: $http_proxy"
+export devuser='m.murphy@nib.com.au'
+export devpassword='password'
 
 # The output of all these installation steps is noisy. With this utility
 # the progress report is nice and concise.
@@ -37,8 +39,8 @@ cd /home/vagrant/dev
 git clone https://github.com/caevyn/sample_blog.git
 cd sample_blog
 bundle
-bundle exec rake
-bundle exec padrino start -h 0.0.0.0
+bundle exec rake ar:setup
+bundle exec padrino start -h 0.0.0.0 
 
 
 
